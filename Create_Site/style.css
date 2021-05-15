@@ -4,8 +4,7 @@ body{
   padding: 0;/*ボーダーの中の余白*/
   width: 100%;
   height: 100%;
-  background-image: url(images/body_border.gif);/*背景画像*/
-  background-repeat: repeat-x;
+  background-color: #dcdcdc;
 }
 
 p {
@@ -13,66 +12,58 @@ p {
   line-height: 150%;/*行間*/
 }
 
-#container{
-  width: 1000px;
+.body_container{
+  width: 1366px;
   height: auto;
   margin: 0px auto 0px auto;/*上右下左の順*/
   float: none;
 }
 
 header {
-  height: 120px;
-  width: 990px;
-  background-color: #666666; /* 背景色 */
+  width: 1366px;
+  height: 60px;
+  padding: 15px 0px 13px;
+  margin: auto 0px auto 0px;/*上右下左の順*/
+  background-color: #555555;
 }
 
-header #Logo_area {
-  float: left;
-  height: 60px;
-  width: 300px;
-  margin-left: 30px;
+header .Title_area {
+  width: 79px;
+  height: 17px;
+  margin: 0 0px 2px 203px;
+  font-family: Meiryo;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
 }
 /*なんで隙間ができていたのか*/
 
-header #Logo_area h1{
-  margin-top: 40px;
-}
 
-header #Navi_area {
+
+header .Menu_area {
   float: right;
-  height: 60px;
-  width: 580px;
+  height: 17px;
+  width: 480px;
+  padding: 0 203px 0 0;
+  margin: 0px;
 }
 
-header #Navi_area #banner {
-  float: right;
-  margin-right: 30px;
+header .Menu_area ul {
+  padding: 0px;
+  margin: 0px;
+  font-family: Meiryo;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
 }
 
-header #Navi_area ul {
-  list-style-type: none;/*リストにつく頭の記号をnoneで消す*/
-  font-size: 10px;
-  margin-top: 100px;
-}
-
-header #Navi_area li {
+header .Menu_area li {
   display: inline;
   float: right;
-  width: 70px;
-  border-left-style: solid;/*soldは実線*/
-  border-left-width: 1px;
-  border-left-color: #050505;
-  padding-left: 8px;
-}
-
-header #Navi_area li a {
-  text-decoration: none;
-  color: #000;
-}
-
-header #Navi_area li a:hover {
-  text-decoration: underline;
-  color: #09F;
+  width: 100px;
+  padding-left: 0px;
 }
 
 header h1 {
@@ -85,54 +76,67 @@ main {
   width: 1000px;
 }
 
-main .choice{
+main .Image_Top{
   position: relative;
+  height: 540px;
 }
 
-main .choice h2 {
-  margin-left: 30px;
+main .Image_Top h2 {
+  width: 280px;
+  height: 60px;
+  margin: 60px 416px 40px 203px;
+  font-family: Meiryo;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  color: #ffffff;
   position: absolute;
   color: #FFF;
   top: 0;
   left: 0;
 }
 
-main .choice p {
-  margin-left: 30px;
+main .Image_Top p {
+  font-family: Meiryo;
+  margin-left: 203px;
   position: absolute;
   color: #FFF;
   top: 160px;
   left: 0;
+  font-size: 24px;
 }
 
-main .choice label{
+main .Image_Top label{
   top: 328px;
-  left: 30px;
+  left: 203px;
   position: absolute;
- /* 整える */
- margin: 1em 0; /* 前後の隙間 */
- padding: 0.6em 1em; /* 塗りの余白 */
- font-size: 1em; /* フォントサイズ */
- background-color: #1aa1ff; /* 背景色 */
- color: #FFF; /* テキストカラー */
- cursor: pointer; /* カーソルを指マークに */
- border-radius: 3px; /* 角の丸み */
- border: 0; /* 枠線を消す */
- transition: 0.3s; /* ホバーの変化を滑らかに */
+  width: 200px;
+  height: 80px;
+  margin: 0 496px 0 0;
+  padding: 22px 64px;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #59a0f1;
+  font-size: 40px;
 }
 
-main .choice2{
+main .Back_Top{
   position: relative;
+  background-color: #ffffff;
   margin: 0px;
   padding: 0px;
-  height: 100px;
-  width: 900px;
+  height: 167px;
+  width: 1366px;
 }
 
-main .choice2 p {
-  padding: 0px;
-  margin-top: 54px;
+main .Back_Top p {
+  padding-top: 54px;
+  margin-top: 0px;
   margin-bottom: 0px;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
   color: #000;
   top: 50%;
   left: 50%;
@@ -141,10 +145,13 @@ main .choice2 p {
   justify-content: center
 }
 
-main .choice2 button{
+main .Back_Top button{
   top: 30px;
-  left: 800px;
+  left: 1105px;
   position: absolute;
+  font-family: Meiryo;
+  font-size: 16px;
+  font-weight: bold;
  /* 整える */
  margin: 1em 0; /* 前後の隙間 */
  padding: 0.6em 1em; /* 塗りの余白 */
@@ -155,162 +162,146 @@ main .choice2 button{
  border-radius: 100%; /* 角の丸み */
  border: 0; /* 枠線を消す */
  transition: 0.3s; /* ホバーの変化を滑らかに */
- width:50px;
- height:50px;
+ width:58px;
+ height:58px;
  font-size: 12px;
 }
 
-main #Side_navi {
-  height: auto;
-  width: 320px;
+main .Main_cap {
+ margin-top: 60px;
+ height: 500px;
+ width: 1366px;
+}
+
+main .Navi_left {
+  height: 360px;
+  width: 304px;
   float: left;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 203px;
   color: #2c2c2f;
-  background: #cde4ff;/*背景色*/
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
 }
 
-#Side_navi .MainBox_item {
-  width: 300px;
+.Navi_left .Main_image {
+  width: 264px;
   float: center;
-  margin-bottom: 20px;
-  padding: 0.5em 1em;
-  margin: 2em 0;
+  margin: 20px 0px 20px 20px;
 }
 
-#Side_navi .MainBox_item .MainTitle {
+.Navi_left .Main_image .MainTitle {
   width: 300px;
-  height: 0;
-  margin-top: 0px;
-  margin-bottom: 7px;
 }
 
-#Side_navi .MainBox_item .MainTitle h2 {
-  font-size: 12px;
-  color: #4A4A4A;
-  margin: 0 0 0 10px;
-  padding: 5px;
+.Navi_left .Main_image .MainTitle h2 {
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 28px 0 20px 0px;
 }
 
-#Side_navi .MainBox_item p {
-  font-size: 10px;
-  color: #4A4A4A;
-  margin: 20px 0 0 10px;
-  padding: 5px;
+.Navi_left .Main_image p {
+  font-family: Meiryo;
+  font-size: 13px;
+  margin: 20px 0 0 0px;
 }
 
-#Side_navi .MainBox_item img {
+.Navi_left .MainBox_item img {
   float: center;
 }
 /*横並びをしない場合はfloatの設定ミスかmarginの値ミス*/
-main .Main_all {
-  background-color: #000;
-}
 
-main #Main_box {
-  height: auto;
-  width: 320px;
+main .Navi_center {
+  height: 360px;
+  width: 304px;
   float: left;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 24px;
   color: #2c2c2f;
-  background: #cde4ff;/*背景色*/
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
 }
 
-#Main_box .MainBox_item {
-  width: 300px;
+.Navi_center .Main_image {
+  width: 264px;
   float: center;
-  margin-bottom: 20px;
-  padding: 0.5em 1em;
-  margin: 2em 0;
+  margin: 20px 0px 20px 20px;
 
 }
 
-#Main_box .MainBox_item .MainTitle {
+.Navi_center .Main_image .MainTitle {
   width: 300px;
-  height: 0;
-  margin-top: 0px;
-  margin-bottom: 7px;
 }
 
-#Main_box .MainBox_item .MainTitle h2 {
-  font-size: 12px;
-  color: #4A4A4A;
-  margin: 0 0 0 10px;
-  padding: 5px;
+.Navi_center .Main_image .MainTitle h2 {
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 28px 0 20px 0px;
 }
 
-#Main_box .MainBox_item p {
-  font-size: 10px;
-  color: #4A4A4A;
-  margin: 20px 0 0 10px;
-  padding: 5px;
+.Navi_center .Main_image p {
+  font-family: Meiryo;
+  font-size: 13px;
+  margin: 20px 0 0 0px;
 }
 
-#Main_box .MainBox_item img {
+.Navi_center .Main_image img {
   float: center;
 }
 
 
-main #Banner_box {
-  height: auto;
-  width: 330px;
+main .Navi_right {
+  height: 360px;
+  width: 304px;
   float: right;
+  margin: 0 203px 0 24px;
   color: #2c2c2f;
-  background: #cde4ff;/*背景色*/
-  margin-bottom: 20px ;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
 }
 
-#Banner_box .MainBox_item {
-  width: 300px;
+.Navi_right .Main_image {
+  width: 264px;
   float: center;
-  margin-bottom: 20px;
-  padding: 0.5em 1em;
-  margin: 2em 0;
+  margin: 20px 0px 20px 20px;
 
 }
 
-#Banner_box .MainBox_item .MainTitle {
+.Navi_right .Main_image .MainTitle {
   width: 300px;
-  height: 0;
-  margin-top: 0px;
-  margin-bottom: 7px;
 }
 
-#Banner_box .MainBox_item .MainTitle h2 {
-  font-size: 12px;
-  color: #4A4A4A;
-  margin: 0 0 0 10px;
-  padding: 5px;
+.Navi_right .Main_image .MainTitle h2 {
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 28px 0 20px 0px;
 }
 
-#Banner_box .MainBox_item p {
-  font-size: 10px;
-  color: #4A4A4A;
-  margin: 20px 0 0 10px;
-  padding: 5px;
+.Navi_right .Main_image p {
+  font-family: Meiryo;
+  font-size: 13px;
+  margin: 20px 0 0 0px;
 }
 
-#Banner_box .MainBox_item img {
+.Navi_right .Main_image img {
   float: center;
-}
-
-main .BannerImg {
-  display: flex;/*フレックスボックス*/
-  justify-content: space-between;/*中のイメージを均等にする*/
 }
 
 footer {
   clear: both;
-  height: 20px;
-  width: 900px;
-  background-color: #000;
-  font-size: 10px;
+  height: 48px;
+  width: 1366px;
+  background-color: #cccccc;
+  font-size: 14px;
   text-align: center;
   color: #FFF;
-  line-height: 17px;
   margin: 0 auto 0 auto;
+  padding-top: 14px;
 }
-
-
 
 table {
   margin-left: 30px;
