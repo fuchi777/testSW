@@ -22,17 +22,18 @@ p {
 header {
   width: 1366px;
   height: 60px;
-  padding: 15px 0px 13px;
-  margin: auto 0px auto 0px;/*上右下左の順*/
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;/*上右下左の順*/
   background-color: #555555;
 }
 
 header .Title_area {
   width: 79px;
   height: 17px;
-  margin: 0 0px 2px 203px;
+  margin: 0px 0px 0px 203px;
+  padding: 10px 0px 0px 0px;
   font-family: Meiryo;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: left;
   color: #ffffff;
@@ -64,6 +65,17 @@ header .Menu_area li {
   float: right;
   width: 100px;
   padding-left: 0px;
+  color: #ffffff;
+}
+
+header .Menu_area li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .Menu_area li a:hover {
+  text-decoration: underline;
+  color: #09F;
 }
 
 header h1 {
@@ -114,11 +126,11 @@ main .Image_Top label{
   width: 200px;
   height: 80px;
   margin: 0 496px 0 0;
-  padding: 22px 64px;
+  padding: 0px 0px;
   border-radius: 8px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #59a0f1;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 main .Back_Top{
@@ -146,7 +158,7 @@ main .Back_Top p {
 }
 
 main .Back_Top button{
-  top: 30px;
+  top: 84px;
   left: 1105px;
   position: absolute;
   font-family: Meiryo;
@@ -167,8 +179,32 @@ main .Back_Top button{
  font-size: 12px;
 }
 
+main .Back_Top button:hover{
+  top: 84px;
+  left: 1105px;
+  position: absolute;
+  font-family: Meiryo;
+  font-size: 16px;
+  font-weight: bold;
+ /* 整える */
+ margin: 1em 0; /* 前後の隙間 */
+ padding: 0.6em 1em; /* 塗りの余白 */
+ font-size: 1em; /* フォントサイズ */
+ background-color: #fa8072; /* 背景色 */
+ color: #000; /* テキストカラー */
+ cursor: pointer; /* カーソルを指マークに */
+ border-radius: 100%; /* 角の丸み */
+ border: 0; /* 枠線を消す */
+ transition: 0.3s; /* ホバーの変化を滑らかに */
+ width:58px;
+ height:58px;
+ font-size: 12px;
+}
+
 main .Main_center {
  margin-top: 60px;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
  height: 500px;
  width: 1366px;
 }
@@ -180,8 +216,19 @@ main .Navi_left {
   margin: 0 0 0 203px;
   color: #2c2c2f;
   border-radius: 8px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
+}
+
+main .Navi_left:hover {
+  height: 360px;
+  width: 304px;
+  float: left;
+  margin: 0 0 0 203px;
+  color: #2c2c2f;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  transform: translate(0, -5px);
 }
 
 .Navi_left .Main_image {
@@ -221,6 +268,18 @@ main .Navi_center {
   border-radius: 8px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
+}
+
+main .Navi_center:hover {
+  height: 360px;
+  width: 304px;
+  float: left;
+  margin: 0 0 0 24px;
+  color: #2c2c2f;
+  border-radius: 8px;
+  box-shadow: 5px 3px 6px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  transform: translate(-5px, -5px);
 }
 
 .Navi_center .Main_image {
@@ -263,6 +322,18 @@ main .Navi_right {
   background-color: #ffffff;
 }
 
+main .Navi_right:hover {
+  height: 360px;
+  width: 304px;
+  float: right;
+  margin: 0 203px 0 24px;
+  color: #2c2c2f;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px 10px rgba(0, 0, 0, 0.9);
+  background-color: #ffffff;
+  transform: translate(0, -10px);
+}
+
 .Navi_right .Main_image {
   width: 264px;
   float: center;
@@ -297,10 +368,19 @@ footer {
   width: 1366px;
   background-color: #cccccc;
   font-size: 14px;
-  text-align: center;
   color: #FFF;
-  margin: 0 auto 0 auto;
-  padding-top: 14px;
+  position: relative;
+}
+
+footer p{
+  top: 14px;
+  left: 600px;
+  clear: both;
+  background-color: #cccccc;
+  font-size: 14px;
+  color: #FFF;
+  margin: auto;
+  position: absolute;
 }
 
 table {
