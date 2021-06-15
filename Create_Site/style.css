@@ -34,6 +34,7 @@ header {
   margin: 0 auto;/* 真ん中揃え */
   display: flex; /* 子要素を横並び */
   justify-content: space-between;/* 子要素を両端に配置 */
+  align-items: center; /* 上下中央合わせ */
 }
 
 header .Title_area {
@@ -46,9 +47,14 @@ header .Title_area {
   /* line-height: 1.5; */
   /* text-align: left; */
   color: #ffffff;
-  /* NEW */
-  line-height: 60px;/* 上下真ん中合わせ */
 }
+
+/*
+header h1 {
+  padding: 0px;
+  margin: 0px;
+}
+*/
 
 /*
 header .Menu_area {
@@ -59,7 +65,7 @@ header .Menu_area {
   /* margin: 0px; }
 */
 
-header .Menu_area ul {
+header .Menu_area {
   /* padding: 0px; */
   /* margin: 0px; */
   font-family: Meiryo;
@@ -90,11 +96,6 @@ header .Menu_area li a {
 header .Menu_area li a:hover {
   text-decoration: underline;
   color: #09F;
-}
-
-header h1 {
-  padding: 0px;
-  margin: 0px;
 }
 
 main {
