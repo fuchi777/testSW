@@ -20,52 +20,66 @@ p {
 }
 
 header {
-  width: 1366px;
-  height: 60px;
-  padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;/*上右下左の順*/
+  /* width: 1366px; */
+  /* height: 60px; */
+  /* padding: 0px 0px 0px 0px; */
+  /* margin: 0px 0px 0px 0px;/*上右下左の順*/
   background-color: #555555;
 }
 
+/*NEW*/
+.header_container {
+  height: 60px; /* 高さ */
+  width: 960px;/* コンテナの幅 */
+  margin: 0 auto;/* 真ん中揃え */
+  display: flex; /* 子要素を横並び */
+  justify-content: space-between;/* 子要素を両端に配置 */
+}
+
 header .Title_area {
-  width: 79px;
-  height: 17px;
-  margin: 0px 0px 0px 203px;
-  padding: 10px 0px 0px 0px;
+  /* width: 79px; */
+  /* height: 17px; */
+  /* margin: 0px 0px 0px 203px; */
+  /* padding: 10px 0px 0px 0px; */
   font-family: Meiryo;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: left;
+  /* font-size: 14px; */
+  /* line-height: 1.5; */
+  /* text-align: left; */
   color: #ffffff;
+  /* NEW */
+  line-height: 60px;/* 上下真ん中合わせ */
 }
-/*なんで隙間ができていたのか*/
 
-
-
+/*
 header .Menu_area {
-  float: right;
-  height: 17px;
-  width: 480px;
-  padding: 0 203px 0 0;
-  margin: 0px;
-}
+  /* float: right; */
+  /* height: 17px; */
+  /* width: 480px; */
+  /* padding: 0 203px 0 0; */
+  /* margin: 0px; }
+*/
 
 header .Menu_area ul {
-  padding: 0px;
-  margin: 0px;
+  /* padding: 0px; */
+  /* margin: 0px; */
   font-family: Meiryo;
   font-size: 20px;
-  line-height: 1.5;
-  text-align: left;
+  /* line-height: 1.5; */
+  /* text-align: left; */
   color: #ffffff;
+  /* NEW */
+  list-style: none;/* リストスタイルなし */
+  display: flex; /* 子要素を横並び */
 }
 
 header .Menu_area li {
-  display: inline;
-  float: right;
-  width: 100px;
-  padding-left: 0px;
+  /* display: inline; */
+  /* float: right; */
+  /* width: 100px; */
+  /* padding-left: 0px; */
   color: #ffffff;
+  /* NEW */
+  margin-left: 1em;/*　リスト間の余白　*/
 }
 
 header .Menu_area li a {
